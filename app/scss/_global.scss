@@ -22,7 +22,7 @@ li {
 
 body {
   font-family: "Quicksand", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   line-height: 30px;
   color: #555555;
@@ -50,4 +50,45 @@ body {
 .btn-blue:hover,
 .btn-blue:focus {
   background-color: $btn-blue-hover;
+  color: #fff;
+}
+
+.btn-white {
+  background-color: transparent;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid #fff;
+  border-radius: 30px;
+  font-weight: 300;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+  font-weight: 700;
+}
+
+.btn-white:active,
+.btn-white-active {
+  background-color: #fff;
+  color: $btn-blue;
+}
+
+input,
+select {
+  border: 1px solid #dae0e6;
+  height: 47px;
+  outline: none;
+  padding: 0px 25px;
+  color: #898f96;
+  &::placeholder {
+    color: #898f96;
+    font-weight: 300;
+    font-size: 15px;
+  }
+}
+
+select:focus {
+  background-color: rgb(231, 233, 241);
 }
