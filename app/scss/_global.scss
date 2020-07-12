@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #555555;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.btn-blue {
+  background-color: $btn-blue;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+  background-color: $btn-blue-hover;
+}

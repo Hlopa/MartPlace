@@ -1,3 +1,107 @@
-@import "vars"; 
-@import "global"; 
+@import "vars";
+@import "global";
 @import "fonts";
+
+//-------Header--------//
+
+.header__top {
+  background-color: $grey;
+  min-height: 100px;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+  }
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user__register {
+  padding: 13px 22px;
+  border-radius: 26px;
+  margin-right: 50px;
+}
+
+.user__icons {
+  margin-right: 50px;
+}
+
+.user__account {
+  display: flex;
+  align-items: center;
+  &-avatar {
+    width: 50px;
+    height: 50px;
+    margin-right: 23px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.user__account-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 22px;
+  font-weight: 500;
+  color: #333;
+}
+
+.user__money {
+  color: $btn-blue;
+}
+
+.header__menu-inner {
+  align-items: center;
+  min-height: 79px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav {
+  padding: 20px 75px 20px 0px;
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  &-item + &-item {
+    margin-left: 30px;
+  }
+}
+
+.header__search {
+  position: relative;
+  width: 360px;
+  &-input {
+    border: 1px solid #dae0e6;
+    width: 100%;
+    height: 47px;
+    border-radius: 26px;
+    padding: 0px 25px;
+    outline: none;
+    &::placeholder {
+      color: #898f96;
+      font-weight: 300;
+      font-size: 15px;
+    }
+  }
+
+  &-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 47px;
+    width: 70px;
+    border-radius: 26px;
+    box-shadow: none;
+  }
+}
