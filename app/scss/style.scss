@@ -52,6 +52,10 @@
   color: #333;
 }
 
+.user__name {
+  color: #333;
+}
+
 .user__money {
   color: $btn-blue;
 }
@@ -68,10 +72,12 @@
   &-list {
     display: flex;
     flex-wrap: wrap;
-    text-transform: uppercase;
+  }
+  &-item a {
     color: #333;
     font-weight: 500;
     font-size: 15px;
+    text-transform: uppercase;
   }
   &-item + &-item {
     margin-left: 30px;
@@ -224,4 +230,128 @@
 
 .advantages-title-3::before {
   content: url(../images/advantage-3.png);
+}
+
+//------Slider Products-------//
+
+.slider__products {
+  position: relative;
+  background-color: #eff1f5;
+  padding: 119px 0px;
+  &-arrow {
+    background-color: #7347c1;
+  }
+  &-main {
+    margin-top: 45px;
+    box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+    border-radius: 4px;
+    background-color: #fff;
+    display: flex;
+  }
+  &-item {
+    display: flex;
+  }
+  &-about {
+    padding: 50px 60px 23px 50px;
+  }
+  &-title {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000;
+  }
+}
+
+.section__row {
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  background-color: #fff;
+  min-height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.slider__products-item {
+  display: flex !important;
+}
+
+.product__info {
+  display: flex;
+  font-size: 15px;
+}
+
+.autor__avatar {
+  margin-right: 10px;
+}
+
+.autor__name {
+  color: #000;
+  margin-right: 47px;
+}
+
+.category-wordpress::before {
+  content: url(../images/icon/wordpress-icob.png);
+}
+
+.product__hashtag-list {
+  display: flex;
+  margin-bottom: 40px;
+  li {
+    background-color: #f1f3f6;
+    font-size: 15px;
+    color: #868c96;
+    padding: 7px 11px;
+    border-radius: 26px;
+    & + li {
+      margin-left: 9px;
+    }
+  }
+}
+
+.product__item-bottom {
+  border-top: 1px solid #ececec;
+  padding-top: 24px;
+}
+
+.product__item-cost {
+  background-color: $btn-blue;
+  color: #fff;
+  font-size: 15px;
+  width: fit-content;
+  padding: 11px 15px;
+  border-radius: 26px;
+  font-weight: 500;
+}
+
+.slick-next.slick-arrow,
+.slick-prev.slick-arrow {
+  font-size: 0;
+  position: absolute;
+  background-color: transparent;
+  top: -117px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.slick-next.slick-arrow {
+  right: 48px;
+  background-image: url(../images/slider-products/arrow-nexr.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slick-prev.slick-arrow {
+  right: 91px;
+  background-image: url(../images/slider-products/slider-prev.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slick-arrow:hover,
+.slick-arrow:focus {
+  background-color: #9773d6;
 }
