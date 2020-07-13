@@ -93,8 +93,7 @@ select:focus {
   background-color: rgb(231, 233, 241);
 }
 
-
-.section__row{
+.section__row {
   box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
   background-color: #fff;
   min-height: 112px;
@@ -102,26 +101,25 @@ select:focus {
   align-items: center;
   justify-content: space-between;
   padding: 10px 30px;
-  &-title{
+  &-title {
     font-size: 30px;
-   color:#000;
+    color: #000;
   }
-  &-arrow{
+  &-arrow {
     width: 110px;
     height: 50px;
     border-radius: 26px;
   }
 }
 
-
-.category{
-  color: #7347c1; 
+.category {
+  color: #7347c1;
   position: relative;
-} 
+}
 
-.category::before{
+.category::before {
   content: "";
   position: absolute;
   left: -20px;
   top: 2px;
-} 
+}
