@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mart Place</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -15,387 +16,75 @@
     <div class="header__top">
       <div class="container">
         <div class="header__top-inner">
-          <a class="header__logo" href="">
-            <img src="images/logo.png" alt="Logo Mart Place">
-          </a>
-          <div class="user">
-            <button type="button" class="user__register btn-blue">
-              Become a Seller
-            </button>
-            <div class="user__icons">
-              <img src="images/icon/header-icons.png" alt="">
+          <div class="logo">
+            <a href="#" class="logo__link">
+              <img src="images/logo.png" alt="logo MartPlace">
+            </a>
+          </div>
+          <div class="user-menu">
+            <a class="seller-btn btn-blue" href="#">Become a Seller</a>
+            <div class="user-menu__icons">
+              <a class="user-menu__icons-item lnr lnr-alarm" href="#"></a>
+              <a class="user-menu__icons-item lnr lnr-envelope" href="#"></a>
+              <a class="user-menu__icons-item lnr lnr-cart" href="#"></a>
             </div>
-            <div class="user__account">
-              <a href="" class="user__account-avatar"
-                style="background-image: url(images/content/user-avatar.jpg);"></a>
-              <div class="user__account-info">
-                <a href="" class="user__name">
+            <a class="account" href="#">
+              <div class="account__avatar" style="background-image: url(images/content/user-avatar-1.png);">
+              </div>
+              <div class="account__info">
+                <div href="#" class="account__name">
                   Taofiq Hakim
-                </a>
-                <span class="user__money">
+                </div>
+                <span class="account__money">
                   $20.45
                 </span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="header__menu">
+    <div class="header__bottom">
       <div class="container">
-        <div class="header__menu-inner">
-          <nav class="header__nav">
-            <ul class="header__nav-list">
-              <li class="header__nav-item"><a href="">Home</a></li>
-              <li class="header__nav-item"><a href="">All products</a></li>
-              <li class="header__nav-item"><a href="">Wordpress</a></li>
-              <li class="header__nav-item"><a href="">Festures</a></li>
-              <li class="header__nav-item"><a href="">Pages</a></li>
-
+        <div class="header__bottom-inner">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__item-link" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link" href="#">
+                  All products
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link" href="#">
+                  Wordpress
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link" href="#">
+                  Festures
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link" href="#">
+                  Pages
+                </a>
+              </li>
             </ul>
           </nav>
-          <form action="" class="header__search">
-            <input type="text" class="header__search-input" placeholder="Search product here..." required>
-            <button class="header__search-btn btn-blue" type="submit">
-              <img src="images/icon/search.png" alt="">
-            </button>
+          <form class="header-search form-search">
+            <input class="header-search__input input-search" type="text" placeholder="Search product here...">
+            <button class="header-search__btn btn-blue btn-search" type="submit"></button>
           </form>
         </div>
       </div>
     </div>
   </header>
-  <section class="promo">
-    <div class="promo__header">
-      <div class="container">
-        <div class="promo__header-inner">
-          <div class="promo__header-title">
-            Create Your Own
-            <span>Digital Product Marketplace</span>
-          </div>
-          <p class="promo__header-text">
-            MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
-          </p>
-          <div class="promo__header-btn">
-            <button data-filter="all" class="btn-white btn-white-active">View All Products</button>
-            <button data-filter=".category-popular" class="btn-white">Popular Products</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="promo__search">
-      <div class="container">
-        <form action="" class="promo__search-form">
-          <input type="text" class="promo__search-input" placeholder="Search your products...">
-          <select name="categories">
-            <option value="All Categories">All Categories</option>
-          </select>
-          <button type="submit" class="btn-blue">Search Now</button>
-        </form>
-      </div>
-    </div>
-    <div class="promo__advantages">
-      <div class="container">
-        <div class="promo__advantages-inner">
-          <div class="promo__advantages-item">
-            <div class="promo__advantages-title advantages-title-1">
-              Best UX Research
-            </div>
-            <p class="promo__advantages-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-              scelerisque
-              the mattis, leo quam aliquet diam
-              congue is laoreet elit metus.
-            </p>
-          </div>
-          <div class="promo__advantages-item">
-            <div class="promo__advantages-title advantages-title-2">Fully Responsive</div>
-            <p class="promo__advantages-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-              scelerisque
-              the mattis, leo quam aliquet diam
-              congue is laoreet elit metus.
-            </p>
-          </div>
-          <div class="promo__advantages-item">
-            <div class="promo__advantages-title advantages-title-3">Buy & Sell Easily</div>
-            <p class="promo__advantages-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-              scelerisque
-              the mattis, leo quam aliquet diam
-              congue is laoreet elit metus.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="slider__products">
-    <div class="container">
-      <div class="section__row">
-        <div class="section__row-title">
-          Weekly Featured Products
-        </div>
-        <div class="section__row-arrow slider__products-arrow"></div>
-      </div>
-      <div class="slider__products-main">
-        <div class="slider__products-item">
-          <img src="images/slider-products/product-1.jpg" alt="product image">
-          <div class="slider__products-about">
-            <div class="slider__products-title">One Page Resume Template</div>
-            <div class="product__info">
-              <a href="" class="autor__avatar">
-                <img src="images/content/autor-avatar-1.jpg" alt="autor avatar">
-              </a>
-              <span class="autor__name">AazzTech</span>
-              <div class="type type-wordpress">WordPress</div>
-            </div>
-            <p class="product__slider-text">
-              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-              aliquet
-              congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-              aliquet congue justo ut scelerisque.
-            </p>
-            <ul class="product__hashtag-list">
-              <li>website</li>
-              <li>plugin</li>
-              <li>landing page</li>
-            </ul>
-            <div class="product__item-bottom">
-              <div class="product__item-cost">$10 - $50</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="slider__products-item">
-          <img src="images/slider-products/product-1.jpg" alt="product image">
-          <div class="slider__products-about">
-            <div class="slider__products-title">Two Page Resume Template</div>
-            <div class="product__info">
-              <a href="" class="autor__avatar">
-                <img src="images/content/autor-avatar-1.jpg" alt="autor avatar">
-              </a>
-              <span class="autor__name">AazzTech</span>
-              <div class="type type-wordpress">WordPress</div>
-            </div>
-            <p class="product__slider-text">
-              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-              aliquet
-              congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-              aliquet congue justo ut scelerisque.
-            </p>
-            <ul class="product__hashtag-list">
-              <li>website</li>
-              <li>plugin</li>
-              <li>landing page</li>
-            </ul>
-            <div class="product__item-bottom">
-              <div class="product__item-cost">$10 - $50</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="slider__products-item">
-          <img src="images/slider-products/product-1.jpg" alt="product image">
-          <div class="slider__products-about">
-            <div class="slider__products-title">Three Page Resume Template</div>
-            <div class="product__info">
-              <a href="" class="autor__avatar">
-                <img src="images/content/autor-avatar-1.jpg" alt="autor avatar">
-              </a>
-              <span class="autor__name">AazzTech</span>
-              <div class="type type-wordpress">WordPress</div>
-            </div>
-            <p class="product__slider-text">
-              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-              aliquet
-              congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-              aliquet congue justo ut scelerisque.
-            </p>
-            <ul class="product__hashtag-list">
-              <li>website</li>
-              <li>plugin</li>
-              <li>landing page</li>
-            </ul>
-            <div class="product__item-bottom">
-              <div class="product__item-cost">$10 - $50</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="newest">
-    <div class="container">
-      <div class="section__row section__row-newest">
-        <div class="section__row-title">
-          Newest Release Products
-        </div>
-        <button type="button" class="newest__filter">Filter by:</button>
-      </div>
-      <div class="newest__category-btn">
-        <button type="button" data-filter=".category-plugins" class="category-btn-active">Plugins</button>
-        <button type="button" data-filter=".category-wordpress">WordPress</button>
-        <button type="button" data-filter=".category-SiteTemplate">Site Template</button>
-        <button type="button" data-filter=".category-psd">PSD Template</button>
-        <button type="button" data-filter=".category-joomla">Joomla</button>
-        <button type="button" data-filter=".category-interface">User Interface</button>
-        <button type="button" data-filter=".category-landing">Landing Page</button>
-        <button type="button" data-filter=".category-sowtware">Software</button>
-      </div>
-      <div class="newest__products">
-        <article class="product__item card mix category-wordpress">
-          <div class="product__item-image newest__image-1">
-            <button class="product__img-btn">More Info</button>
-            <button class="product__img-btn">Live Demo</button>
-          </div>
-          <div class="product__about">
-            <div class="product__about-top">
-              <a class="product__title" href="">E-commerce Shopping Cart</a>
-              <div class="product__info">
-                <a href="" class="autor__avatar">
-                  <img src="images/content/autor-avatar-1.jpg" alt="autor avatar">
-                </a>
-                <a class="autor__name" href="">Theme-Valley</a>
-                <div class="type type-wordpress">Plugin</div>
-              </div>
-              <p class="product__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                the mattis, leo quam aliquet congue.
-              </p>
-            </div>
-            <div class="product__about-bottom">
-              <div class="product__cost">$20</div>
-            </div>
-          </div>
-        </article>
-        <article class="product__item mix category-psd">
-          <div class="product__item-image newest__image-2">
-            <button class="product__img-btn">More Info</button>
-            <button class="product__img-btn">Live Demo</button>
-          </div>
-          <div class="product__about">
-            <div class="product__about-top">
-              <a class="product__title" href="">Marketify Coffee Shop</a>
-              <div class="product__info">
-                <a href="" class="autor__avatar">
-                  <img src="images/content/autor-avatar-1.jpg" alt="autor avatar">
-                </a>
-                <a class="autor__name" href="">EchoTheme</a>
-                <div class="type type-psd">PSD</div>
-              </div>
-              <p class="product__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                the mattis, leo quam aliquet congue.
-              </p>
-            </div>
-            <div class="product__about-bottom">
-              <div class="product__cost">$18</div>
-            </div>
-          </div>
-        </article>
-        <article class="product__item mix category-plugins">
-          <div class="product__item-image newest__image-3">
-            <button class="product__img-btn">More Info</button>
-            <button class="product__img-btn">Live Demo</button>
-          </div>
-          <div class="product__about">
-            <div class="product__about-top">
-              <a class="product__title" href="">Bryson - Portfolio Template</a>
-              <div class="product__info">
-                <a href="" class="autor__avatar">
-                  <img src="images/content/autor-avatar-1.jpg" alt="autor avatar">
-                </a>
-                <a class="autor__name" href="">Artcorner</a>
-                <div class="type type-html">HTML</div>
-              </div>
-              <p class="product__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                the mattis, leo quam aliquet congue.
-              </p>
-            </div>
-            <div class="product__about-bottom">
-              <div class="product__cost">$10</div>
-            </div>
-          </div>
-        </article>
-        <article class="product__item mix category-plugins">
-          <div class="product__item-image newest__image-4">
-            <button class="product__img-btn">More Info</button>
-            <button class="product__img-btn">Live Demo</button>
-          </div>
-          <div class="product__about">
-            <div class="product__about-top">
-              <a class="product__title" href="">E-commerce Shopping Cart</a>
-              <div class="product__info">
-                <a href="" class="autor__avatar">
-                  <img src="images/content/autor-avatar-1.jpg" alt="autor avatar">
-                </a>
-                <a class="autor__name" href="">Design-Hub</a>
-                <div class="type type-plugin">Plugin</div>
-              </div>
-              <p class="product__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                the mattis, leo quam aliquet congue.
-              </p>
-            </div>
-            <div class="product__about-bottom">
-              <div class="product__cost">$10-50</div>
-            </div>
-          </div>
-        </article>
-        <article class="product__item mix category-psd">
-          <div class="product__item-image newest__image-5">
-            <button class="product__img-btn">More Info</button>
-            <button class="product__img-btn">Live Demo</button>
-          </div>
-          <div class="product__about">
-            <div class="product__about-top">
-              <a class="product__title" href="">Marketify Coffee Shop</a>
-              <div class="product__info">
-                <a href="" class="autor__avatar">
-                  <img src="images/content/autor-avatar-1.jpg" alt="autor avatar">
-                </a>
-                <a class="autor__name" href="">AazzTech</a>
-                <div class="type type-psd">PSD</div>
-              </div>
-              <p class="product__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                the mattis, leo quam aliquet congue.
-              </p>
-            </div>
-            <div class="product__about-bottom">
-              <div class="product__cost">$10-$50</div>
-            </div>
-          </div>
-        </article>
-        <article class="product__item mix category-joomla">
-          <div class="product__item-image newest__image-6">
-            <button class="product__img-btn">More Info</button>
-            <button class="product__img-btn">Live Demo</button>
-          </div>
-          <div class="product__about">
-            <div class="product__about-top">
-              <a class="product__title" href="">Bryson - Portfolio Template</a>
-              <div class="product__info">
-                <a href="" class="autor__avatar">
-                  <img src="images/content/autor-avatar-1.jpg" alt="autor avatar">
-                </a>
-                <a class="autor__name" href="">Coder-Lab</a>
-                <div class="type type-html">HTML</div>
-              </div>
-              <p class="product__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                the mattis, leo quam aliquet congue.
-              </p>
-            </div>
-            <div class="product__about-bottom">
-              <div class="product__cost">$10</div>
-            </div>
-          </div>
-        </article>
-      </div>
-      <button type="button" data-filter="all" class="newest__btn btn-blue">All New Products</button>
-    </div>
-  </section>
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

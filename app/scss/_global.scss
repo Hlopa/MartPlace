@@ -9,14 +9,11 @@ html {
 }
 
 a {
-  display: inline-block;
   text-decoration: none;
 }
 
 ul,
 li {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
@@ -24,8 +21,8 @@ body {
   font-family: "Quicksand", sans-serif;
   font-weight: 300;
   font-size: 16px;
-  line-height: 30px;
-  color: #555555;
+  color: $main-text;
+  line-height: 1.3em;
 }
 
 .container {
@@ -34,92 +31,45 @@ body {
   margin: 0 auto;
 }
 
+@mixin round-avatar {
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .btn-blue {
   background-color: $btn-blue;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
   color: #fff;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 20px;
   border: none;
   cursor: pointer;
   transition: all 0.3s;
-  outline: none;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 26px;
 }
 
-.btn-blue:hover,
-.btn-blue:focus {
+.btn-blue:hover {
   background-color: $btn-blue-hover;
-  color: #fff;
 }
 
-.btn-white {
-  background-color: transparent;
-  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
-  border: 1px solid #fff;
-  border-radius: 30px;
-  font-weight: 300;
-  color: #fff;
-  cursor: pointer;
-  outline: none;
-}
-
-.btn-white:hover,
-.btn-white:focus {
-  font-weight: 700;
-}
-
-.btn-white:active,
-.btn-white-active {
-  background-color: #fff;
-  color: $btn-blue;
-}
-
-input,
-select {
-  border: 1px solid #dae0e6;
-  height: 47px;
-  outline: none;
-  padding: 0px 25px;
-  color: #898f96;
-  &::placeholder {
-    color: #898f96;
-    font-weight: 300;
-    font-size: 15px;
-  }
-}
-
-select:focus {
-  background-color: rgb(231, 233, 241);
-}
-
-.section__row {
-  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
-  background-color: #fff;
-  min-height: 112px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 30px;
-  &-title {
-    font-size: 30px;
-    color: #000;
-  }
-  &-arrow {
-    width: 110px;
-    height: 46px;
-    border-radius: 26px;
-  }
-}
-
-.type {
-  color: #7347c1;
+.form-search {
+  width: 100%;
   position: relative;
-  font-size: 15px;
 }
 
-.type::before {
+.input-search {
+  height: 47px;
+  width: 100%;
+  display: block;
+  border: 1px solid $grey-border;
+  border-radius: 26px;
+  font-size: 15px;
+  color: $input-text;
+}
+
+.btn-search {
   position: absolute;
-  left: -19px;
-  top: 2px;
+  right: 0;
+  top: 0;
+  height: 47px;
 }
