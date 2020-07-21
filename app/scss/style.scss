@@ -363,3 +363,76 @@
 .weekly-slider__star {
   margin-left: auto;
 }
+
+//----Newest release----//
+
+.newest-release {
+  background-color: #f6f7fb;
+  padding-top: 118px;
+}
+
+.newest-release__row {
+  margin-bottom: 33px;
+}
+
+.newest-release__filter {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  padding-right: 26px;
+  cursor: pointer;
+  &::after {
+    content: "";
+    background-image: url(../images/icon/filter.svg);
+    width: 5px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.newest-release__tag-box {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
+  padding: 32px 30px;
+  margin-bottom: 47px;
+}
+
+.product__tag-btn {
+  background-color: #f1f3f6;
+  color: #747b86;
+  font-size: 15px;
+  padding: 5px 17px;
+  display: inline-block;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  & + & {
+    margin-left: 5px;
+  }
+  &:hover {
+    background-color: #0674ec;
+    color: #fff;
+  }
+  &:active {
+    background-color: #8bb4e0;
+  }
+}
+
+.newest-release__product {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
+}
+
+.newest-release__all {
+  margin: 0 auto;
+  display: block;
+  padding: 20px 25px;
+}
