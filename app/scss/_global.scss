@@ -121,7 +121,7 @@ body {
 .product__author {
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 9px;
   &-name {
     font-size: 15px;
     color: #000;
@@ -228,14 +228,20 @@ button.slick-next.slick-arrow {
   margin-top: 32px;
 }
 
+
+
+
+
 .product__item-img {
-  display: block;
-  min-height: 235px;
+  
+  min-height: 229px;
   @include backgroung-image;
+  
 }
 
 .product__item-content {
-  padding: 34px 34px;
+  
+  padding: 25px 30px 14px;
 }
 
 .product__item-top {
@@ -254,6 +260,8 @@ button.slick-next.slick-arrow {
 .product__item-text {
   line-height: 30px;
   word-spacing: 1px;
+  padding: 0;
+  margin-top: 25px;
 }
 
 .product__item-bottom {
@@ -267,9 +275,9 @@ button.slick-next.slick-arrow {
   color: #0674ec;
   font-size: 15px;
   font-weight: 500;
-  padding: 5px 10px;
+  padding: 5px 18px;
   border-radius: 16px;
-  margin-right: 18px;
+  margin-right: 13px;
 }
 
 .product__item__bag {
