@@ -192,8 +192,7 @@ body {
   color: #0674ec;
 }
 
-button.slick-prev.slick-arrow,
-button.slick-next.slick-arrow {
+button.slick-arrow {
   font-size: 0;
   width: 11px;
   height: 15px;
@@ -201,19 +200,17 @@ button.slick-next.slick-arrow {
   background-color: transparent;
   cursor: pointer;
   position: absolute;
+  @include backgroung-image;
+  top: -110px;
 }
 
 button.slick-prev.slick-arrow {
   background-image: url(../images/icon/left.png);
-  @include backgroung-image;
-  top: -110px;
   right: 105px;
 }
 
 button.slick-next.slick-arrow {
   background-image: url(../images/icon/right.png);
-  @include backgroung-image;
-  top: -110px;
   right: 53px;
 }
 
@@ -229,11 +226,8 @@ button.slick-next.slick-arrow {
 }
 
 
-
-
-
 .product__item-img {
-  
+  display: block;
   min-height: 229px;
   @include backgroung-image;
   
@@ -287,3 +281,5 @@ button.slick-next.slick-arrow {
 .product__item__star {
   margin-left: 15px;
 }
+
+
