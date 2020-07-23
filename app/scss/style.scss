@@ -582,3 +582,68 @@
 .folowers-slider__inner button.slick-arrow{
   top: -77px;
 }
+
+
+//----Statistic section-----//
+
+.statistic{
+  background-color: #212225;
+  padding: 93px 0px 96px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.statistic-item{
+  display: flex;
+  flex-direction: column;
+  max-width: 215px;
+  width: fit-content;
+  text-align: center;
+  & + &{
+    margin-left: 50px;
+  }
+  &__icon{
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  &__number{
+   font-size: 36px;
+   margin-bottom: 23px;
+  }
+  &__text{
+    font-size: 18px;
+    color: #fff;
+  }
+}
+
+
+.statistic-item--1{
+  .statistic-item__icon,
+  .statistic-item__number{
+    color: #feb71d;
+  }
+}
+
+
+.statistic-item--2{
+  .statistic-item__icon,
+  .statistic-item__number{
+    color: #58c9e9;
+  }
+}
+
+.statistic-item--3{
+  .statistic-item__icon,
+  .statistic-item__number{
+    color: #77de51;
+  }
+}
+
+.statistic-item--4{
+  .statistic-item__icon,
+  .statistic-item__number{
+    color: #ff6a6d;
+  }
+}
