@@ -192,6 +192,9 @@ body {
   color: #0674ec;
 }
 
+
+.folowers-slider,
+.weekly-slider{
 button.slick-arrow {
   font-size: 0;
   width: 11px;
@@ -202,8 +205,10 @@ button.slick-arrow {
   position: absolute;
   @include backgroung-image;
   top: -110px;
-}
+}}
 
+.folowers-slider,
+.weekly-slider{
 button.slick-prev.slick-arrow {
   background-image: url(../images/icon/left.png);
   right: 105px;
@@ -212,7 +217,7 @@ button.slick-prev.slick-arrow {
 button.slick-next.slick-arrow {
   background-image: url(../images/icon/right.png);
   right: 53px;
-}
+}}
 
 //---Product item----//
 

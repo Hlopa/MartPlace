@@ -20,6 +20,13 @@ $(function () {
     }
     );
 
+    $('.feedback-slider__box').slick({
+        slidesToShow: 2,
+        slidesToScroll: 2
+    }
+    );
+
+
     var mixer = mixitup('.newest-release__product');
 
 })
