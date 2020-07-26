@@ -192,32 +192,33 @@ body {
   color: #0674ec;
 }
 
-
 .folowers-slider,
-.weekly-slider{
-button.slick-arrow {
-  font-size: 0;
-  width: 11px;
-  height: 15px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  position: absolute;
-  @include backgroung-image;
-  top: -110px;
-}}
-
-.folowers-slider,
-.weekly-slider{
-button.slick-prev.slick-arrow {
-  background-image: url(../images/icon/left.png);
-  right: 105px;
+.weekly-slider {
+  button.slick-arrow {
+    font-size: 0;
+    width: 11px;
+    height: 15px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    @include backgroung-image;
+    top: -110px;
+  }
 }
 
-button.slick-next.slick-arrow {
-  background-image: url(../images/icon/right.png);
-  right: 53px;
-}}
+.folowers-slider,
+.weekly-slider {
+  button.slick-prev.slick-arrow {
+    background-image: url(../images/icon/left.png);
+    right: 105px;
+  }
+
+  button.slick-next.slick-arrow {
+    background-image: url(../images/icon/right.png);
+    right: 53px;
+  }
+}
 
 //---Product item----//
 
@@ -230,16 +231,13 @@ button.slick-next.slick-arrow {
   margin-top: 32px;
 }
 
-
 .product__item-img {
   display: block;
   min-height: 229px;
   @include backgroung-image;
-  
 }
 
 .product__item-content {
-  
   padding: 25px 30px 14px;
 }
 
@@ -287,4 +285,11 @@ button.slick-next.slick-arrow {
   margin-left: 15px;
 }
 
-
+.title-part {
+  font-size: 36px;
+  font-weight: 300;
+  color: #000;
+  span {
+    color: $btn-blue;
+  }
+}
